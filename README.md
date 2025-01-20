@@ -9,22 +9,33 @@ Create a pipeline that accepts an individual's name and basic details, retrieves
 ## 2. Set Up the Pipeline Components:
 The pipeline consists of the following components:
 **URL** : Fetches content from one or more URL given to it.
+
 **Wikipedia API** : Retrieves information from Wikipedia. 
+
 **Search API** : Searches and retrieves information from Google. 
+
 **Data Collection Agent**: Gather comprehensive personal information about the specified individual.
+
 **Keyword SEO Agent**: Structure and extract keywords for each category. 
+
 **Prompt Component**: Crafts a precise prompt to instruct the AI model on extracting and structuring the desired information in a JSON format.
+
 **OpenAI Language Model**: Processes the prompt and generates the required output.
+
 **JSON cleaner**: Ensures the generated output is valid JSON by enabling : Remove control characters, normalize unicode and validate JSON.
 
 
 ## 3. Connect the Components:
 Establish the following connections to ensure data flows seamlessly through the pipeline:
 **Input → Data Collection Agent:** Feeds the individual's name and details into the Data Collection Agent.
+
 **Wikipedia API, Search API →Data Collection Agent:** connects search engine tools to data collection agent.
+
 **Data Collection Agent → Keyword SEO Agent:** Supplies the gathered personal information to the keyword SEO Agent.
+
 **Keyword SEO Agent, Prompt → OpenAI Language Model:** Sends the structured information  to the AI model for processing.
 **OpenAI Language Model → JSON Cleaner:** Passes the AI-generated output to the JSON Cleaner for validation.
+
 **JSON Cleaner → Output:** Provides the final structured JSON for use or display.
 
 
