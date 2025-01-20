@@ -8,6 +8,7 @@ Create a pipeline that accepts an individual's name and basic details, retrieves
 
 ## 2. Set Up the Pipeline Components:
 The pipeline consists of the following components:
+
 **URL** : Fetches content from one or more URL given to it.
 
 **Wikipedia API** : Retrieves information from Wikipedia. 
@@ -27,6 +28,7 @@ The pipeline consists of the following components:
 
 ## 3. Connect the Components:
 Establish the following connections to ensure data flows seamlessly through the pipeline:
+
 **Input → Data Collection Agent:** Feeds the individual's name and details into the Data Collection Agent.
 
 **Wikipedia API, Search API →Data Collection Agent:** connects search engine tools to data collection agent.
